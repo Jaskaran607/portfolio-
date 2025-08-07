@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eeeef0;
+    color: #f9f6f6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #3F4A95;
+    color: #fff;
+}
+.logo{
+    color: #fff;
+    font-size:24px;
+    font-weight: bold;
+}
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #1fd0a1;
+}
+
+.navbar a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #1fd0a1;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.contact-btn .phone-icon {
+    margin-right: 10px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #14b98b;
+    padding: 80px 10%;
+    border-top-left-radius: 0px;
+    border-top-right-radius:0px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+
+     background: white;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 24px;
+    background: white;
+    color: #14b98b;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero-content p span {
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #4c4e9e;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.hero-image img {
+    max-width: 450px;
+    width: 100%;
+}
+
+/*==================*/
+/*==about=======*/
+  .container {
+
+      max-width: 1200px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+      padding: 0 20px;
+  }
+ .image-box img {
+      width: 100%;
+      max-width: 650px;
+      border-radius: 20px;
+    }
+    .content-box {
+      flex: 1;
+      min-width: 300px;
+    }
+    .story-card {
+      background: #00b386;
+      color: white;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .story-card h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .story-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #000;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+.freelancer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+  padding: 40px;
+  justify-content: center;
+}
+
+.info-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.info-card table {
+  width: 100%;
+}
+
+.info-card td {
+  color: #000;
+  padding: 12px 8px;
+  vertical-align: top;
+}
+
+.label {
+  color: #00a67e;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 80px;
+}
+
+.stats-grid {
+  flex: 2 1 500px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+.stat-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.stat-box h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #111;
+}
+
+.stat-box p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #00a67e;
+}
+
+/*****company section****/
+.companies-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.companies-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:8rem;
+  align-items: center;
+}
+
+.company-logos img {
+  max-height: 80px;
+  max-width: 170px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.company-logos img:hover {
+  transform: scale(1.05);
+}
+
+/***=======****/
+/**services****/
+/***========***/
+
+.services-header {
+  background-color: #15b686;
+  text-align: center;
+  padding: 20px 40px;
+  position: relative;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 4px solid white;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-header h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+
+/* Cards Section */
+/* Grid layout: 2 columns, responsive */
+/* Cards Grid Layout */
+.cards-wrapper {
+  display: grid;
+  height:65rem;
+    grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Base Card Style */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Price Tag */
+.price-tag {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: #4b45c7;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.price-tag::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #15b686;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.price-tag.green {
+  background-color: #15b686;
+  color: white;
+}
+
+.price-tag.green::after {
+  background-color: #4b45c7;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #15b686;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #15b686;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-bottom: 30px;
+}
+
+/* Hover effect: fill + slight scale */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #15b686;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.btn:hover {
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(21, 182, 134, 0.3);
+}
+
+/* Make sure text is above the background */
+.btn {
+  z-index: 1;
+}
+
+/* Optional subtle tracking effect */
+.btn span {
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.5px;
+  transition: letter-spacing 0.3s ease;
+}
+
+.btn:hover span {
+  letter-spacing: 1px;
+}
+
+
+/* Icon */
+/* Icon Container - already defined, we enhance it */
+.icon-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  margin-left: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Icon Image - animate on hover */
+.icon-container img {
+  transform: rotate(-45deg);
+  width: 40px;
+  height: 40px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover Animation */
+.card:hover .icon-container {
+  transform: rotate(45deg) scale(1.1);
+  box-shadow: 0 8px 20px rgba(21, 182, 134, 0.2);
+}
+
+.card:hover .icon-container img {
+  transform: rotate(-45deg) scale(1.2);
+  filter: brightness(1.2);
+}
+
+
+
+.icon-container.green-bg {
+  background-color: #15b686;
+}
+
+.icon-container.green-bg img {
+  filter: brightness(0) invert(1);
+}
+
+/*****product******/
+.projects-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ .section-header {
+  background-color: #1abc9c;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;         /* limits width */
+  margin: 0 auto 50px;      /* centers it */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.section-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+
+.section-header h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.projects-grid {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+/* Container setup */
+.project-card {
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;; /* ↓ Decreased from 300px */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+/* Image reveal container */
+.project-card img {
+  width: 100%;
+  height: 300px; /* Adjust based on your image height */
+  object-fit: cover;
+  border-radius: 15px;
+  transform: translateY(50%); /* Start halfway down */
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect: reveal full image */
+.project-card:hover img {
+  transform: translateY(0);
+}
+
+/* Optional card lift on hover */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Category & title styling for visual spacing */
+.category {
+  color: #1abc9c;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 22px;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+  color: #000;
+}
+
+/*==============*/
+/**say-hey*=====*/
+/* Container Layout */
+.say-hi-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.say-hi-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.say-hi-header img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.say-hi-header h2 {
+    font-size: 32px;
+    margin-top: 15px;
+    color: #4CAF50;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #388E3C;
+}
+
+.about, .contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info h4,
+.about h4 {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+/* Contact Form Styles */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.services-select button {
+    padding: 10px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 5px 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.services-select button:hover {
+    background-color: #388E3C;
+}
+
+.send-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
